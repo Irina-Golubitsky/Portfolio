@@ -2,6 +2,7 @@
     --primary-color: rgb(206, 226, 50);
     --secondary-color: #505160;
     --tertiary-color: #68829e;
+    --quaternary-color: #598234;
   }
   
   * {
@@ -31,7 +32,7 @@ header {
     background-color: var(--primary-color);
     margin: 0;
     padding:  5px 15px 5px 50px;
-    font-size: 3vw;
+    font-size: 36px;
   }
   
   header a {
@@ -54,7 +55,7 @@ header {
   header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 28px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   
@@ -65,3 +66,33 @@ header {
   }
   
   /* HEADER / NAVBAR STYLES END */  
+  /* Hero */
+.hero {
+    background: var(--tertiary-color);
+    background-image: linear-gradient(to right, rgba(255,0,0,0), var(--secondary-color));
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.hero-image-background {
+    background-image: url("../images/white-pattern.png");
+    background-size: 330px;
+    width: 100%;
+    padding: 50px 0px 0px 0px;
+}
+
+
+.hero-image-background h2 {
+    padding:  5px 50px 5px 15px;
+    font-size: 34px;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    margin: 0;
+    display: inline;
+    float: right;
+    margin: auto;
+    
+}
