@@ -2,7 +2,7 @@
     --primary-color: rgb(206, 226, 50);
     --secondary-color: #505160;
     --tertiary-color: #68829e;
-    --quaternary-color: #598234;
+    --quaternary-color: #272833;
   }
   
   * {
@@ -69,8 +69,8 @@ header {
   /* Hero */
 .hero {
     background: var(--tertiary-color);
-    background-image: linear-gradient(to right, rgba(255,0,0,0), var(--secondary-color));
-    height: 120px;
+    background-image: linear-gradient(to right, rgba(80,81,96,0.3), var(--secondary-color));
+    height: 160px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -81,48 +81,88 @@ header {
     background-image: url("../images/white-pattern.png");
     background-size: 330px;
     width: 100%;
-    padding: 50px 0px 0px 0px;
+    padding: 70px 0px 0px 0px;
 }
 
 
 .hero-image-background h2 {
-    padding:  5px 50px 5px 15px;
+    padding:  5px 50px 5px 15px; 
     font-size: 34px;
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     margin: 0;
-    display: inline;
     float: right;
-    margin: auto;
-    
+    margin: auto;   
 }
 /* Content Classes */
-
-.main-page
-{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-}
 .content {
-    padding: 20px 0;
+    width: 90%;
+    margin: 30px auto; 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.content h2 {
-    padding:0px 20px;
-    border-right: 5px solid var(--tertiary-color);
-    flex: 0 0 20%;
+.content-title {
+    flex: 20%;
     text-align: right;
-    font-size: 40px;
+    padding-right: 20px;
+    font-size: 35px;
     color: var(--tertiary-color);
-
+    border-right: 3px solid var(--tertiary-color);
 }
-.content div{
-    padding:0px 20px;
-    flex: 0 0 70%;
+.content-info {
+    flex: 80%;
+    padding: 0px 0px 0px 20px;
+}
+.content-info p {
+    padding: 0px 0px 15px 0px;
+    color: var(--quaternary-color);
+}
+.left {
+    float: left;
+}
+
+/* Work Section */
+.grid-work {
+    display: grid;
+    gap: 12px;
+    grid-template-columns: auto auto;
+    grid-auto-rows: 200px;
+}
+
+.work-item {
     display: flex;
-    flex-wrap: wrap;
-
+    align-items: flex-end;
+    text-decoration: none;
+    background-blend-mode: soft-light;
+    background-color: var(--secondary-color);
+    border: 5px solid var(--primary-color);
+    color: var(--quaternary-color);
+    font-size: 15px;
 }
+.work-item:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.work-item div {
+    background-color: var(--primary-color);
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+}
+.work-item:hover {
+    background-color: var(--tertiary-color);
+}
+
+.horiseon {
+    background-image: url("../images/digital-marketing-meeting.jpg");
+    background-size: 150%;
+}
+
+.sky{
+    background-image: url("../images/template1.jpg");
+}
+
+.blue {
+    background-image: url("../images/template2.jpg");
+}
+
