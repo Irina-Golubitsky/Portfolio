@@ -166,3 +166,19 @@ header {
     background-image: url("../images/template2.jpg");
 }
 
+/* Contact Me section */
+.my-contacts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.my-contacts a{
+    text-decoration: underline;
+    color: var(--quaternary-color);
+    font-size: 20px;
+}
+.my-contacts a:hover{
+ color: var(--tertiary-color);
+
+}
