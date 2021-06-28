@@ -81,7 +81,7 @@ header {
     background-image: url("../images/white-pattern.png");
     background-size: 330px;
     width: 100%;
-    padding: 70px 0px 0px 0px;
+    /* padding: 70px 0px 0px 0px; */
 }
 
 
@@ -90,7 +90,7 @@ header {
     font-size: 34px;
     background-color: var(--primary-color);
     color: var(--tertiary-color);
-    margin-right: 5%;
+    margin:60px 5% 0px 0px;
     float: right; 
 }
 /* Content Classes */
@@ -184,4 +184,48 @@ header {
 .my-contacts a:hover{
  color: var(--tertiary-color);
 
+}
+/* MEDIA QUERY FOR TABLETS MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 800px) {
+    header {
+        padding: 10px 15px;
+        flex-direction: column;
+      }
+      
+      header h1 {
+        padding:  5px 15px;
+        font-size: 30px;
+      }
+      
+      header nav ul li a {
+        font-size: 20px;
+      }
+    .hero {
+        height: 100px;
+    }
+    .hero-image-background > h2 {
+        padding:  5px 15px; 
+        font-size: 25px;
+        margin:30px 0px ;
+        align-content: center;
+        float: right;  
+    }
+    .content {
+        margin:auto;
+        width:100%;
+        flex-direction: column;
+    }
+    .content-title {
+        flex: 100%;
+        margin: 5px;
+        text-align: center;
+        font-size: 28px;
+        border-right: none;
+    }
+    .content-info {
+        flex: 100%;
+        margin: 5px;
+        padding: 5px;;
+    }
+    
 }
