@@ -85,14 +85,13 @@ header {
 }
 
 
-.hero-image-background h2 {
-    padding:  5px 50px 5px 15px; 
+.hero-image-background > h2 {
+    padding:  5px 15px; 
     font-size: 34px;
     background-color: var(--primary-color);
     color: var(--tertiary-color);
-    margin: 0;
-    float: right;
-    margin: auto;   
+    margin-right: 5%;
+    float: right; 
 }
 /* Content Classes */
 .content {
@@ -113,6 +112,10 @@ header {
 .content-info {
     flex: 80%;
     padding: 0px 0px 0px 20px;
+}
+.image img {
+    width:150px;
+    margin-right: 20px;
 }
 .content-info p {
     padding: 0px 0px 15px 0px;
