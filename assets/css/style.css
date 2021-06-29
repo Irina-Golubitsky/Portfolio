@@ -127,11 +127,21 @@ header {
 }
 
 /* Work Section */
+.item1 { grid-area: a; }
+.item2 { grid-area: b; }
+.item3 { grid-area: c; }
+.item4 { grid-area: d; }
+.item5 { grid-area: e; }
+
 .grid-work {
     display: grid;
+    width:100%;
     gap: 12px;
-    grid-template-columns: auto auto;
-    grid-auto-rows: 200px;
+    grid-template:
+    "a a" auto
+    "b c" auto
+    "d e" auto;
+    grid-template-rows: 400px 200px 200px;
 }
 
 .work-item {
@@ -142,10 +152,6 @@ header {
     background-color: var(--secondary-color);
     border: 5px solid var(--primary-color);
     color: var(--quaternary-color);
-}
-.work-item:first-child {
-    grid-column: span 2;
-    grid-row: span 2;
 }
 .work-item div {
     background-color: var(--primary-color);
