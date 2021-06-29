@@ -127,7 +127,6 @@ header {
 }
 
 /* Work Section */
-.item1 { grid-area: a; }
 .item2 { grid-area: b; }
 .item3 { grid-area: c; }
 .item4 { grid-area: d; }
@@ -163,6 +162,7 @@ header {
 }
 
 .horiseon {
+    grid-area: a; 
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: 150%;
 }
