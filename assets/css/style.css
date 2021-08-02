@@ -163,8 +163,16 @@ header {
 
 .horiseon {
     grid-area: a; 
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: 150%;
+    background-image: url("../images/screenshot1.png");
+    background-size: 100%;
+}
+.weather{
+    background-image: url("../images/pageView.png");
+    background-size: 100%;
+}
+.sheduler{
+    background-image: url("../images/page-view.png");
+    background-size: 100%;
 }
 
 .sky{
