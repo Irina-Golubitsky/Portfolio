@@ -74,6 +74,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
    
 }
 
@@ -92,6 +93,12 @@ header {
     color: var(--tertiary-color);
     margin:60px 5% 0px 0px;
     float: right; 
+}
+.hero-banner-img {
+    width: 150px;
+    margin: 20px;
+    border-radius: 10%;
+    opacity: 0.8;
 }
 /* Content Classes */
 .content {
@@ -160,9 +167,13 @@ header {
 .work-item:hover {
     background-color: var(--tertiary-color);
 }
-
-.horiseon {
+.quiz {
     grid-area: a; 
+    background-image: url("../images/quiz.png");
+    background-size: 100%;
+}
+
+.oculus{
     background-image: url("../images/screenshot1.png");
     background-size: 100%;
 }
