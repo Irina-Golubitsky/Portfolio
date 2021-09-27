@@ -16,9 +16,6 @@ To navigave the content you can scroll or use navigation menu at the top left of
 
 ## Page View
 
-| ![alt text](assets/img/screen1.png)| ![alt text](assets/img/screen1.png)  |
-| :---:   | :-: | 
-| ![alt text](assets/img/screen3.png)| ![alt text](assets/img/screen1.png) | 
 
 | Page View for a screen resolution of 800px and wider | Page View for a screen resolution of 800px and smaller  |
 | :-----: | :-: |
